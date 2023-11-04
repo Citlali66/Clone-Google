@@ -1,0 +1,231 @@
+body{
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - margen hacia adentro*/
+    padding: 0;
+    /* Fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* *************************************************** */
+/* ******************************************** */
+/* ******************************** */
+/* NAVEGACION */
+
+header{
+    /* width -ancho /// height - alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos de la lista*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    /* Eliminar linea debajo del texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    /* Color del texto de las anclas */
+    color: black;
+    /* Margen a la derecha de los alementos */
+    margin-right: 20px;
+}
+
+/* Icono del menu */
+nav .nav-right-section .menu {
+    /* Agregar icono desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen este contenida en el elemento mas grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /* Es normal que se repitan a veces las imagenes*/
+    /* Con lo siguiente hacemos que no se repita*/
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img {
+    /* Redondear bordes */
+    border-radius: 100%;
+    /* Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    /* Espacio entre imagenes */
+    margin-left: 20px;
+}
+
+/* *************************************************** */
+/* ******************************************** */
+/* ******************************** */
+/* MAIN */
+
+main {
+    /* Agregar espacio entre Header y Main*/
+    margin-top: 200px;
+    text-align: center;
+}
+
+/* ******************************************** */
+/* ******************************** */
+/* LOGO */
+
+main .main-logo{
+    width: 530px;
+    /* Centrar absolutamente gracias a los margenes automaticos*/
+    /* Vertical || Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img {
+    height: 95px;
+}
+
+/* ******************************************** */
+/* ******************************** */
+/* BARRA DE BUSQUEDA */
+
+main .main-input {
+    width: 530px;
+    /* Centrar absolutamente gracias a los margenes automaticos*/
+    /* Vertical || Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container {
+    /*  ancho borde || borde-estilo || borde color */
+    border: 2px solid #dfe1e5;
+    border-radius: 25px;
+    width: 525px;
+}
+
+main .main-input input {
+    height: 35px;
+    /* quitar el borde */
+    border: none;
+    /* quitar el borde cuando esta activo el input */
+    outline: none;
+    width: 420px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+/* ******************************************** */
+/* ******************************** */
+/* BOTONES */
+
+main .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+main .buttons .search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-right: 10px;
+    padding-block: 6%;
+    width: 150px;
+    border-radius: 5px;
+}
+
+main .buttons .lucky-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-left: 10px;
+    padding-block: 6%;
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* *************************************************** */
+/* ******************************************** */
+/* ******************************** */
+/* FOOTER */
+
+footer {
+    background-color: hsl(0, 0%, 97%);
+    color: #70757a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+footer nav .box-sup {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    margin: 0;
+}
+
+footer nav .box-inf {
+    border: 1px solid #70757a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer nav .box-inf .box-right{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+footer nav .box-inf .box-right a{
+    color: #70757a;
+    margin-left: 30px;
+}
+
+footer nav .box-inf .box-left{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer nav .box-inf .box-left a {
+    color: #70757a;
+    margin-right: 30px;
+}
